@@ -2,9 +2,8 @@
 This repository provides a MATLAB code for simulating turbulent diffusion flames at low Mach numbers using Large Eddy Simulation (LES). The solver employs the finite difference method for spatial discretization and a projection-type algorithm for time integration. A companion article is under submission to a peer-reviewed journal.
 
 # Running the Simulation
-To run the simulation in MATLAB, ensure that all the following auxiliary functions are available in the working directory. Each one is responsible for a specific physical or numerical computation:
+To run the simulation in MATLAB, execute the simulation_LES3D.m script. Make sure all auxiliary functions listed below are available in the working directory, as each one is responsible for a specific numerical operation or post-processing task.
 
-# Core Numerical Routines
 convective2.m
 Computes convective terms using second-order central finite differences.
 
