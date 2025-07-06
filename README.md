@@ -1,4 +1,4 @@
-# LES3D_TurbulentDiffusionFlame_MATLAB
+# LES3D_TurbulentDiffusionFlames
 
 This repository provides a MATLAB code for simulating turbulent diffusion flames at low Mach numbers using Large Eddy Simulation (LES). The solver employs the finite difference method for spatial discretization and a projection-type algorithm for time integration. Subgrid-scale turbulence is modeled using the classical Smagorinsky approach. A companion article is currently under submission to a peer-reviewed journal.
 
