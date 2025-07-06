@@ -1,35 +1,25 @@
 # LES3D_TurbulentDiffusionFlame_MATLAB
 This repository provides a MATLAB code for simulating turbulent diffusion flames at low Mach numbers using Large Eddy Simulation (LES). The solver employs the finite difference method for spatial discretization and a projection-type algorithm for time integration. A companion article is under submission to a peer-reviewed journal.
 
-# Running the Simulation
-To run the simulation in MATLAB, execute the simulation_LES3D.m script. Make sure all auxiliary functions listed below are available in the working directory, as each one is responsible for a specific numerical operation or post-processing task.
+## Running the Simulation
+To run the simulation in MATLAB, execute the [`simulation_LES3D.m`](./simulation_LES3D.m) script. Make sure all auxiliary functions listed below are available in the working directory, as each one is responsible for a specific numerical operation or post-processing task:
 
-convective2.m
-Computes convective terms using second-order central finite differences.
+- [`convective2.m`](./convective2.m): computes convective terms using second-order central finite differences;
 
-convective4.m
-Computes convective terms using fourth-order central finite differences.
+- [`convective4.m`](./convective4.m): computes convective terms using fourth-order central finite differences;
 
-pressure2.m
-Calculates the pressure gradient using second-order finite differences.
+- [`pressure2.m`](./pressure2.m): calculates the pressure gradient using second-order finite differences;
 
-pressure4.m
-Calculates the pressure gradient using fourth-order finite differences.
+- [`pressure4.m`](./pressure4.m): calculates the pressure gradient using fourth-order finite differences;
 
-diffusive2.m
-Computes viscous/diffusive terms using second-order finite differences.
+- [`diffusive2.m`](./diffusive2.m): computes viscous/diffusive terms using second-order finite differences;
 
-diffusive4.m
-Computes viscous/diffusive terms using fourth-order finite differences.
+- [`diffusive4.m`](./diffusive4.m): computes viscous/diffusive terms using fourth-order finite differences;
 
-poisson2.m
-Solves the Poisson equation for pressure correction using a second-order discretization.
+- [`poisson2.m`](./poisson2.m): solves the Poisson equation for pressure correction using a second-order discretization;
 
-poisson4.m
-Solves the Poisson equation for pressure correction using a fourth-order discretization.
+- [`poisson4.m`](./poisson4.m): solves the Poisson equation for pressure correction using a fourth-order discretization;
 
-tempdens.m
-Determines temperature and density fields based on the mixture fraction, using thermodynamic relations and flame assumptions.
+- [`tempdens.m`](./tempdens.m): determines temperature and density fields based on the mixture fraction;
 
-animation.m
-Generates an animated .gif showing the temporal evolution of key flow variables (velocity, temperature, mixture fraction), aiding visualization and analysis.
+- [`animation.m`](./animation.m): generates an animated .gif showing the temporal evolution of key flow variables (velocity magnitude, pressure, mixture fraction, temperature), aiding visualization and analysis.
