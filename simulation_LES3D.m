@@ -29,6 +29,10 @@
 %                  evolution of key flow variables (velocity magnitude, 
 %                  pressure, mixture fraction, temperature).
 
+% Author: Jonatan Ismael Eisermann  
+% Date: July 6, 2025. 
+
+
 clear; clc;                  % data cleaning
 
 disp('         COMPUTER SIMULATION OF THE SANDIA DME D FLAME           ');
