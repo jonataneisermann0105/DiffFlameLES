@@ -105,9 +105,9 @@ function [difu,difv,difw,difZ] = diffusive4(ni, nj, nk, x, y, z, ra, rua, rva, r
                 tau_xz(i,j,k) = ra(i,j,k) * nu * (dudz + dwdx); 
                 tau_yz(i,j,k) = ra(i,j,k) * nu * (dvdz + dwdy);
 
-                tau_Zx(i,j,k)  = ra(i,j,k) * nu * dZdx;
-                tau_Zy(i,j,k)  = ra(i,j,k) * nu * dZdy;
-                tau_Zz(i,j,k)  = ra(i,j,k) * nu * dZdz;
+                tau_Zx(i,j,k)  = ra(i,j,k) * nu / Sc * dZdx;
+                tau_Zy(i,j,k)  = ra(i,j,k) * nu / Sc * dZdy;
+                tau_Zz(i,j,k)  = ra(i,j,k) * nu / Sc * dZdz;
 
             end
         end
@@ -185,7 +185,7 @@ function [difu,difv,difw,difZ] = diffusive4(ni, nj, nk, x, y, z, ra, rua, rva, r
                 difu(i,j,k) = dtau_xxdx + dtau_xydy + dtau_xzdz;
                 difv(i,j,k) = dtau_xydx + dtau_yydy + dtau_yzdz; 
                 difw(i,j,k) = dtau_xzdx + dtau_yzdy + dtau_zzdz; 
-                difZ(i,j,k) = (dtau_Zxdx + dtau_Zydy + dtau_Zzdz) / Sc;
+                difZ(i,j,k) = dtau_Zxdx + dtau_Zydy + dtau_Zzdz;
 
             end
         end
