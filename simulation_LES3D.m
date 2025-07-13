@@ -43,7 +43,7 @@ clear; clc;                  % data cleaning
 disp('         COMPUTER SIMULATION OF THE SANDIA DME D FLAME           ');
 disp(' ');
 disp('Computer code developed by Jonatan Ismael Eisermann as part of his');
-disp('doctoral research at the Federal University of Rio Grande do Sul, under');
+disp('doctoral research at the Federal University of Rio Grande do Sul under');
 disp('the supervision of Prof. Álvaro Luiz de Bortoli, which includes a');
 disp('research period at the University of Seville under the supervision of');
 disp('Prof. Samuele Rubino.');
